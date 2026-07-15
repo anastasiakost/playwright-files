@@ -1,0 +1,44 @@
+PLAYWRIGHT WITH TYPESCRIPT FULL COURSE
+TESTERS TALK
+
+2.3 Locators Strategy in Playwright Test Automation
+
+a) By Role
+Example –
+
+await page.getByRole('link', { name: 'value' }).click();
+
+
+b) By Label
+Example –
+
+await page.getByLabel('value', { exact: true }).fill('value');
+
+
+c) By Alt Attribute – For images
+Example –
+
+await page.getByAltText('alt attribute value').click();
+
+
+d) By Test Id – For Custom Attributes
+Example –
+
+await page.getByTestId('value').fill('testers talk');
+
+
+e) By Text
+Example –
+
+await page.getByText('any text').click(); // partial
+
+
+Example –
+
+await page.getByText('any text', { exact: true }).click();
+
+
+f) By Placeholder
+Example –
+
+await page.getByPlaceholder('value').click();

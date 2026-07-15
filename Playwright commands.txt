@@ -1,0 +1,76 @@
+Playwright commands 
+
+npm run test:chrome
+ 
+npm run test:chrome -- --grep 72252 --repeat-each 10 --workers 1
+ 
+To run only modified tests
+npx playwright test --only-changed
+
+csv command 
+npm install csv-parse
+npm install xlsx
+
+npm install dotenv --save
+
+allure report installs
+
+npm install -g --save-dev allure-commandline
+
+npm install --save-dev allure-playwright
+
+npx allure serve allure-results
+
+allure generate allure-results --clean 
+allure open
+
+npx playwright test --last-failed
+
+
+run the same test multiple tests
+npx playwright test Chapter03/01_Annotations.spec.ts --repeat-each=2
+
+npx playwright test --grep '@RegressionTesting'
+npm install -g npm@11.7.0
+
+npx playwright test --ui test for ui
+
+npx playwright test .tests/Chapter04/04_Test.reports.spec.ts --workers 4
+Update the number of workers
+
+npm init playwright@latest
+
+npx playwright test
+    Runs the end-to-end tests.
+
+npx playwright test example.spec.ts --project='Google Chrome' run particular project
+
+npx playwright test my-test-file.spec.ts --headed
+
+npx playwright test --ui
+    Starts the interactive UI mode.
+
+npx playwright test --project=chromium
+    Runs the tests only on Desktop Chrome.
+
+npx playwright test example
+    Runs the tests in a specific file.
+
+npx playwright test --debug
+    Runs the tests in debug mode.
+
+npx playwright codegen
+    Auto generate tests with Codegen.
+
+We suggest that you begin by typing:
+
+npx playwright test
+
+And check out the following files:
+  - .\tests\example.spec.ts - Example end-to-end test
+  - .\playwright.config.ts - Playwright Test configuration
+
+comment Ctrl K Ctrl C
+uncomment Ctrl K Ctrl U
+
+Visit https://playwright.dev/docs/intro for more information. ✨
